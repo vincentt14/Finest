@@ -79,6 +79,7 @@ header h1 {
 
 #hamburger {
   font-size: 44px;
+  padding: 5px;
   text-decoration: none;
   color: #fdbf50;
 }

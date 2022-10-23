@@ -6,31 +6,29 @@
     <title>Finest</title>
   </head>
   <body>
-    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
+    <a href="#theMealMenuLists" class="skip-link" tabindex="1">Menuju ke konten</a>
     <header id="back">
-      <h1 tabindex="0">Finest</h1>
+      <h1 tabindex="3">Finest</h1>
+      <div class="ham">
+        <a id="hamburger" href="#" aria-label="navigation-menu" tabindex="2">☰</a>
+      </div>
       <nav id="drawer">
         <ul>
-          <li><a href="http://localhost:9000/">Home</a></li>
-          <li><a href="#">Favourite</a></li>
-          <li><a href="#theMeal">TheMeal Recipe</a></li>
-          <li><a href="https://github.com/vincentt14">About Us</a></li>
+          <li><a href="http://localhost:9000/" tabindex="3">Home</a></li>
+          <li><a href="#" tabindex="3">Favourite</a></li>
+          <li><a href="#theMeal" tabindex="3">TheMeal Recipe</a></li>
+          <li><a href="https://github.com/vincentt14" tabindex="3">About Us</a></li>
         </ul>
       </nav>
-      <div class="ham">
-        <a id="hamburger" href="#">☰</a>
-      </div>
     </header>
 
     <main id="maincontent">
       <div class="hero" id="home"></div>
       <div class="content">
-        <h2 tabindex="0">Restaurant Menu</h2>
-        <div class="menuList" id="menuLists">
-        </div>
-        <h2 tabindex="0" id="theMeal">TheMealDB Recipe</h2>
-        <div class="theMealMenuList" id="theMealMenuLists">
-        </div>
+        <h2 tabindex="3">Restaurant Menu</h2>
+        <div class="menuList" id="menuLists"></div>
+        <h2 tabindex="3" id="theMeal">TheMealDB Recipe</h2>
+        <div class="theMealMenuList" id="theMealMenuLists"></div>
       </div>
 
       <footer>
