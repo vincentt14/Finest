@@ -1,14 +1,4 @@
-const theMealMenuLists = document.getElementById("theMealMenuLists");
-
-fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=A`)
-  .then((res) => res.json())
-  .then((data) => {
-    renderFoodItem(data.meals);
-    console.log(data);
-  })
-  .catch((e) => {
-    console.log(e);
-  });
+const theMealMenuLists = document.getElementById('theMealMenuLists');
 
 const renderFoodItem = (meals) => {
   meals.forEach((meal) => {
@@ -23,3 +13,13 @@ const renderFoodItem = (meals) => {
       </article>`;
   });
 };
+
+fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=A')
+  .then((res) => res.json())
+  .then((data) => {
+    renderFoodItem(data.meals);
+    console.log(data);
+  })
+  .catch((e) => {
+    console.log(e);
+  });

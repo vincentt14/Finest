@@ -1,6 +1,7 @@
-const menuList = document.getElementById("menuLists");
+/* eslint-disable array-callback-return */
+const menuList = document.getElementById('menuLists');
 
-fetch("http://localhost:3004/restaurants")
+fetch('http://localhost:3004/restaurants')
   .then((response) => response.json())
   .then((data) => {
     data.map((rest) => {

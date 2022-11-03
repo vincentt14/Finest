@@ -8,19 +8,20 @@
       name="description"
       content="Website Restaurant Finest yang menyediakan menu dan juga resep dalam pembuatan makanan yang lezat dan enak."
     />
+    <link rel="icon" href="./favicon.png">  
   </head>
   <body>
     <a href="#theMealMenuLists" class="skip-link" tabindex="0">Menuju ke konten</a>
     <header id="back">
       <div class="ham">
-        <a id="hamburger" href="#" aria-label="navigation-menu" tabindex="0">☰</a>
+        <button id="hamburger" href="#" aria-label="navigation-menu" tabindex="0">☰</button>
       </div>
       <h1 tabindex="0">Finest</h1>
       <nav id="drawer">
         <ul>
-          <li><a href="http://localhost:9000/" tabindex="0">Home</a></li>
-          <li><a href="#" tabindex="0">Favourite</a></li>
-          <li><a href="#theMeal" tabindex="0">TheMeal Recipe</a></li>
+          <li><a href="#/restaurantList" tabindex="0">Home</a></li>
+          <li><a href="#/favs" tabindex="0">Favourite</a></li>
+          <li><a href="#/theMealMenuList" tabindex="0">TheMeal Recipe</a></li>
           <li><a href="https://github.com/vincentt14" tabindex="0">About Us</a></li>
         </ul>
       </nav>
@@ -29,15 +30,15 @@
     <main id="maincontent">
       <div class="hero" id="home"></div>
       <div class="content">
-        <h2 tabindex="0">Restaurant Menu</h2>
-        <div class="menuList" id="menuLists"></div>
-        <h2 tabindex="0" id="theMeal">TheMealDB Recipe</h2>
-        <div class="theMealMenuList" id="theMealMenuLists"></div>
-      </div>
-
-      <footer>
-        <p>Copyright © 2022 - Finest</p>
-      </footer>
+        <!-- <h2 tabindex="0">Restaurant Lists</h2> -->
+        <!-- <div class="menuList" id="menuLists"></div> -->
+        <!-- <h2 tabindex="0" id="theMeal">TheMealDB Recipe</h2> -->
+        <!-- <div class="theMealMenuList" id="theMealMenuLists"></div> -->
+      <!-- </div> -->
     </main>
+    
+    <footer>
+      <p>Copyright © 2022 - Finest</p>
+    </footer>
   </body>
 </html>

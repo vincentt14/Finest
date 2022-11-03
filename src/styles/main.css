@@ -36,15 +36,17 @@ header h1 {
   font-size: 40px;
   margin-top: 0;
   padding-top: 30px;
+  
 }
 
 #drawer {
   width: 100%;
-  height: 100%;
-  position: fixed;
+  height: 340px;
+  position: absolute;
   transform: translate(-1000px, 0);
   transition: transform 0.3s ease-in-out;
-  background-color: rgba(253, 191, 80, 0.9);
+  background-color: rgba(253, 191, 80);
+  border: 1px solid #ff724c;
 }
 
 #drawer.open {
@@ -73,11 +75,13 @@ header h1 {
 
 .ham {
   background-color: #2a2c41;
-  border-top: 1px solid #ff724c;
+  border: 1px solid #ff724c;
   padding: 5px;
 }
 
 #hamburger {
+  background-color: transparent;
+  border: none;
   font-size: 44px;
   padding: 5px;
   text-decoration: none;
@@ -166,6 +170,12 @@ footer p {
   color: #fdbf50;
 }
 
+@media screen and (min-width: 344px) {
+  #drawer {
+    height: 305px;
+  }
+}
+
 @media screen and (min-width: 550px) {
   header {
     display: grid;
@@ -183,6 +193,7 @@ footer p {
 
   #drawer {
     position: relative;
+    height: 100%;
     transform: translate(0, 0);
     background-color: #2a2c41;
     border: 0.5px solid #333;
@@ -248,6 +259,8 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  
+  
   #drawer a {
     font-size: 18px;
   }
