@@ -1,11 +1,13 @@
-import RestaurantList from '../views/pages/restaurantList';
-import TheMealMenuList from '../views/pages/theMealMenuList';
+import Home from '../views/pages/home';
+import Recipe from '../views/pages/recipe';
+import Favourite from '../views/pages/favourite';
 import Detail from '../views/pages/detail';
 
 const routes = {
-  '/': RestaurantList, // default page
-  '/restaurantList': RestaurantList,
-  '/theMealMenuList': TheMealMenuList,
+  '/': Home, // default page
+  '/home': Home,
+  '/recipe': Recipe,
+  '/favourite': Favourite,
   '/detail/:id': Detail,
 };
 
