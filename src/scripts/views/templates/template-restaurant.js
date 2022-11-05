@@ -19,8 +19,11 @@ const createRestaurantDetailTemplate = (restaurant) => `
   <h4>Description</h4>
   <p>${restaurant.description}</p>
   <h4>Customer Reviews</h4>
-  <p>${restaurant.customerReviews}</p>
-  ${restaurant.customerReviews.map((cr) => cr.name)}
+  ${restaurant.customerReviews.reduce((show, value) => show.concat(`<br>
+  <p>${value.name}</p>
+  <p>${value.review}</p>
+  <p>${value.date}</p>
+  `), '')}
 `;
 
 const createRestaurantItemTemplate = (restaurant) => `
