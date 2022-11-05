@@ -13,13 +13,14 @@ const createRestaurantDetailTemplate = (restaurant) => `
     </div>
   </div>
   <h4>Foods</h4>
-  <p>${restaurant.menus.foods}</p>
+  <p>${restaurant.menus.foods.map((food) => food.name)}</p>
   <h4>Drinks</h4>
-  <p>${restaurant.menus.drinks}</p>
+  <p>${restaurant.menus.drinks.map((drink) => drink.name)}</p>
   <h4>Description</h4>
   <p>${restaurant.description}</p>
   <h4>Customer Reviews</h4>
   <p>${restaurant.customerReviews}</p>
+  ${restaurant.customerReviews.map((cr) => cr.name)}
 `;
 
 const createRestaurantItemTemplate = (restaurant) => `
