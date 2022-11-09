@@ -17,3 +17,10 @@ window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
 });
+
+const goToContent = document.querySelector('.skip-link');
+goToContent.addEventListener('click', (event) => {
+  event.preventDefault();
+  console.log('harusnya ke refer');
+  document.querySelector('#content').focus();
+});
