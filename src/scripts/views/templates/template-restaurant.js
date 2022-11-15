@@ -28,22 +28,22 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createRestaurantItemTemplate = (restaurant) => `
   <article class="post-item" tabindex="0">
-    <img class="post-item__thumbnail lazyload" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name|| '-'}" />
+    <img class="post-item__thumbnail lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name || '-'}" />
     <div class="post-item__content">
       <p class="post-item__rating" tabindex="0">Rating : <span class="post-item__rating__value">${restaurant.rating}</span></p>
-      <h2 class="post-item__title restaurant__title" tabindex="0"><a href="/#/detail/${restaurant.id}">${restaurant.name || '-'}</a></h2>
+      <h2 class="post-item__title restaurant__title" tabindex="0"><a class="title_link" href="/#/detail/${restaurant.id}">${restaurant.name || '-'}</a></h2>
       <p class="post-item__description" tabindex="0">${restaurant.description || '-'}</p>
     </div>
   </article>
 `;
 
-const createLikeMovieButtonTemplate  = () => `
+const createLikeMovieButtonTemplate = () => `
   <button tabindex="0" aria-label="like this restaurant" id="likeButton" class="like">
     <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
-const createUnlikeMovieButtonTemplate  = () => `
+const createUnlikeMovieButtonTemplate = () => `
   <button tabindex="0" aria-label="unlike this restaurant" id="likeButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>

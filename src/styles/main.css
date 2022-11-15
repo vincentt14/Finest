@@ -221,6 +221,10 @@ footer p {
   cursor: pointer;
 }
 
+#query{
+  display: none;
+}
+
 @media screen and (min-width: 344px) {
   #drawer {
     height: 305px;
